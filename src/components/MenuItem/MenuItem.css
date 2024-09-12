@@ -1,0 +1,27 @@
+.restaurant__menuitem{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.restaurant__menuitem-groupA{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.restaurant__menuitem .line{
+    width: 120px;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.restaurant__menuitem-groupA div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-left: 20px;
+}

@@ -1,0 +1,49 @@
+.restaurant__video {
+    height: 100vh;
+    position: relative;
+}
+
+.restaurant__video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.restaurant__video-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.restaurant__video-overlay-circle{
+    
+    padding: 12px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .restaurant__video {
+        height: 60vh;
+    }
+
+    .restaurant__video-overlay-circle{
+    
+        padding: 10px;
+    }
+}
+
+
+@media screen and (max-width: 360px) {
+    .restaurant__video {
+        height: 40vh;
+    }
+
+    .restaurant__video-overlay-circle{
+        padding: 8px;
+    }
+}

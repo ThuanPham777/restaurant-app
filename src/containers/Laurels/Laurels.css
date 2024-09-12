@@ -1,0 +1,104 @@
+.restaurant__laurels{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 120px;
+}
+
+
+
+.restaurant__laurels-container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.restaurant__laurels-container__awards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.restaurant__laurels-container__awards-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.restaurant__laurels-container__awards-item_content h4{
+    font-family: Cormorant Upright;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 29.9px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #DCCA87;
+}
+
+.restaurant__laurels-image img,
+.restaurant__laurels-container__awards-item_image img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.restaurant__laurels-image{
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+}
+
+.restaurant__laurels-image img:last-child{
+    position: absolute;
+    width: 360px;
+    height: 379px;
+    top: 192px;
+    left: -70px;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .restaurant__laurels{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .restaurant__laurels-container__awards{
+        grid-template-columns: 1fr;
+    }
+
+    .restaurant__laurels-image img:last-child{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .restaurant__laurels-image img:last-child{
+        position: absolute;
+        width: 160px;
+        height: 220px;
+    }
+
+    .restaurant__laurels-container__heading h1{
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .restaurant__laurels-container__awards-item_content h4{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    
+    .restaurant__laurels-container__awards-item_content p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+}

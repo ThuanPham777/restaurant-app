@@ -1,0 +1,114 @@
+.restaurant__gallery {
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 150px;
+}
+
+.restaurant__gallery-content {
+    flex: 1;
+}
+
+.restaurant__gallery-image__container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: max-content;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+}
+
+.restaurant__gallery-image {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    max-width: 50%;
+    position: relative;
+}
+
+.app__gallery-images_arrows {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 2rem;
+    transition: .5s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.gallery__arrow-icon {
+    background-color: #000;
+}
+
+.gallery__arrow-icon:hover {
+    opacity: 0.6;
+}
+
+.restaurant__gallery-image img {
+    position: relative;
+}
+
+.restaurant__gallery-image__card {
+    position: relative;
+    min-width: 301px;
+    height: 447px;
+}
+
+
+.gallery__image-icon {
+    position: absolute;
+    color: #fff;
+    transition: .5s ease;
+    cursor: pointer;
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+}
+
+.restaurant__gallery-image__card:hover img {
+    opacity: 0.4;
+}
+
+.restaurant__gallery-image__card:hover .gallery__image-icon {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.restaurant__gallery-image__container::-webkit-scrollbar {
+    display: none;
+}
+
+.restaurant__gallery-content button:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+
+.restaurant__gallery-image__card img {
+    min-width: 301px;
+    height: 447px;
+}
+
+@media screen and (max-width: 1024px) {
+    .restaurant__gallery {
+        flex-direction: column;
+    }
+
+    .restaurant__gallery-image {
+        max-width: 100%;
+    }
+}

@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/Navbar/Navbar";
+import AboutUs from "./containers/AboutUs/AboutUs";
+import Chef from "./containers/Chef/Chef";
+import FindUs from "./containers/FindUs/FindUs";
+import Footer from "./containers/Footer/Footer";
+import Gallery from "./containers/Gallery/Gallery";
+import Header from "./containers/Header/Header";
+import Intro from "./containers/Intro/Intro";
+import Laurels from "./containers/Laurels/Laurels";
+import SpecialMenu from "./containers/Menu/SpecialMenu";
+import "./App.css"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar/>
+      <Header/>
+      <AboutUs/>
+      <SpecialMenu/>
+      <Chef/>
+      <Intro/>
+      <Laurels/>
+      <Gallery/>
+      <FindUs/>
+      <Footer/>
     </div>
   );
 }

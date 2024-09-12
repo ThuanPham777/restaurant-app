@@ -1,0 +1,123 @@
+.restaurant__navbar{
+    color: #fff;
+    background-color: black;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 26px 24px 26px 24px;
+
+}
+
+.restaurant__navbar-logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.restaurant__navbar-logo h1{
+    font-family: Cormorant Upright;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 57.2px;
+    letter-spacing: 0.04em;
+    text-align: center;
+
+}
+
+.restaurant__navbar-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.restaurant__navbar-links p,
+.restaurant__navbar-menu__options-dropdown p{
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    cursor: pointer;
+
+}
+
+.restaurant__navbar-links p:hover,
+.restaurant__navbar-menu__options-dropdown p:hover{
+    border-bottom: 1px solid rgb(206, 206, 15);
+}
+
+.restaurant__navbar-actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.restaurant__navbar-actions__registration p,
+.restaurant__navbar-actions__booking p{
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    cursor: pointer;
+}
+
+ .line{
+    width: 1px;
+    height: 28px;
+    background-color: #fff;
+}
+.restaurant__navbar-menu__icon{
+    display: none;
+}
+.restaurant__navbar-menu__icon i{
+    font-size: 25px;
+    cursor: pointer;
+}
+.restaurant__navbar-menu__options-dropdown{
+    position: absolute;
+    top: 120px;
+    right:  0;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    gap: 10px;
+}
+.restaurant__navbar-menu{
+    display: none;
+}
+@media  screen and (max-width: 990px){
+    .restaurant__navbar-links{
+        display: none;
+    }
+    .restaurant__navbar-menu{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .restaurant__navbar-menu__icon{
+        display: flex;
+    }
+}
+
+@media  screen and (max-width: 550px){
+    .restaurant__navbar-actions{
+        display: none;
+    }
+    .restaurant__navbar-logo h1{
+        font-size: 40px;
+        line-height: 50px
+    }
+}
+
+@media  screen and (max-width: 360px){
+
+}

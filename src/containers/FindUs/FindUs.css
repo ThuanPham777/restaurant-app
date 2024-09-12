@@ -1,0 +1,40 @@
+.restaurant__findus{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 120px;
+}
+
+.restaurant__findus-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.restaurant__findus-openingtime{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.restaurant__findus button:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+
+@media screen and (max-width: 990px) {
+    .restaurant__findus{
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 550px){
+    .restaurant__findus h1{
+        font-size: 60px;
+        line-height: 100px;
+    }
+    
+}

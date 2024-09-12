@@ -1,0 +1,105 @@
+.restaurant__footer-newsletter{
+    background: #0C0C0C;
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    border: 1px solid #fff;
+
+}
+.restaurant__footer-newsletter__heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px
+}
+.restaurant__footer-newsletter__input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.restaurant__footer-newsletter__input button:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+.restaurant__footer-newsletter input{
+    margin-top: 40px;
+    width: 635px;
+    padding: 8px;
+    font-family: Cormorant Upright;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    color:  #AAAAAA;
+    background: #0C0C0C;
+    border: 1px solid #AAAAAA;
+    outline: none;
+    
+}
+
+.restaurant__footer-newsletter .restaurant__subheading img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.restaurant__footer-newsletter__heading h1,
+.restaurant__footer-newsletter__heading p {
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .restaurant__footer-newsletter__input{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .restaurant__footer-newsletter input{
+        width: 600px;
+    }
+
+    .restaurant__footer-newsletter{
+        padding: 40px 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .restaurant__footer-newsletter input{
+        width: 550px;
+    }
+    .restaurant__footer-newsletter{
+        padding: 30px 50px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .restaurant__footer-newsletter input{
+        width: 250px;
+    }
+
+    .restaurant__footer-newsletter__heading h1{
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    .restaurant__footer-newsletter{
+        padding: 10px 20px;
+    }
+
+    .restaurant__footer-newsletter{
+        gap: 0;
+    }
+    
+}
+
